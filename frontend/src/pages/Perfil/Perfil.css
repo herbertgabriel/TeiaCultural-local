@@ -1,0 +1,43 @@
+
+.profile-main{
+    width:40%;
+    margin: 0 auto;
+    padding: 8rem;
+}
+
+.container-photo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sobre-mim{
+    flex-direction: column; 
+}
+.cantato-local{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-publicacoes{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+
+
+
+.container-galeria {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container-galeria img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.hidden {
+    display: none;
+}

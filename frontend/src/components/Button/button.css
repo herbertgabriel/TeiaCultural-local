@@ -1,0 +1,15 @@
+.button-template {
+    border: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 12px 18px;
+    border-radius: 50px;
+    background-color: #CC6700;
+    opacity: 100%;
+  }
+  
+  .button-template:hover {
+    background-color: #F57C00;
+  }

@@ -1,0 +1,62 @@
+.add-publicacao {
+    position: relative;
+}
+
+.add-publicacao {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+    border: 3px solid #CC6700;
+    border-radius: 8px;
+    width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.add-publicacao h2 {
+    color: #CC6700;
+    font-size: 40px;
+    margin: 0;
+}
+
+.add-publicacao textarea {
+    width: 100%;
+    height: 100px;
+    padding: 0.5rem;
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+    resize: none;
+    width: 800px;
+}
+
+.add-publicacao .add-icon {
+    cursor: pointer;
+}
+
+.add-publicacao .add-now {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: white;
+}
+
+.add-publicacao .add-now:hover {
+    color: #CC6700;
+}
+
+
+.add-now p {
+    cursor: pointer;
+}
+
+.success-popup {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: orange;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1000;
+}

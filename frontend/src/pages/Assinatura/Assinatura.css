@@ -1,0 +1,180 @@
+#body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .container {
+    max-width: 1000px;
+  }
+  
+  .container #textcentral {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .container h1 {
+    color: #CC6700;
+    font-size: 62px;
+    margin: 0; 
+    font-weight: bold;
+  }
+  
+  .container p {
+    color: white;
+    font-size: 24px;
+    margin:0;
+  }
+  
+  .plans {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .plan {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 30%;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .plan.selected {
+    outline: solid 5px #CC6700;
+  }
+  
+  .plan h2 {
+    color: #000000;
+    font-size: 35px;
+    font-weight: bold; 
+    margin: 0;
+  }
+  
+  .plan .listbeneficios{
+    display: flex;
+    flex-direction: column;
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  .plan li {
+    font-size: 18px;
+    color: #000000;
+  }
+  
+  .price {
+    font-size: 35px;
+    font-weight: bold;
+    color: #000000;
+    padding: 20px 0;
+  }
+  
+  .button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #CC6700;
+    color: white;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .button:hover {
+    background-color: #b35900;
+  }
+  
+  .popup-planos {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+  }
+  .popup-planos h2{
+    color: #CC6700;
+    font-weight: 700;
+    font-size: 2rem;;
+  }
+
+  .popup-planos p{
+    color: black;
+    font-size: 1.4rem;;
+  }
+  
+  .popup-planos .popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    position: relative;
+    height: 30%;
+    width: 15%;
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+
+  
+  .user-input {
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 400px;
+    margin-top: 10px;	
+  }
+  
+  .continue-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #CC6700;
+    color: white;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 200px;
+  }
+  
+  .continue-button:hover {
+    background-color: #b35900;
+  }
+  
+  .message {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  
+  .message.success {
+    color:green;
+    font-size: 1.2rem;
+  }
+  
+  .message.error {
+    color: red;
+    font-size: 1.2rem;
+
+  }

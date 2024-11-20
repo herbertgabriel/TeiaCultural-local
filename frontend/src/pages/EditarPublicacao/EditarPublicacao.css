@@ -1,0 +1,128 @@
+.container-publicacoes {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.publicacao {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem;
+    border: 3px solid #CC6700;
+    border-radius: 8px;
+}
+
+.publicacao img {
+    width: 500px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.images-edit {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.container-publicacoes .edit-options {
+    display: flex;
+    gap: 20px;
+}
+
+.edit-options .excloi {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.edit-options .excloi:hover {
+    color: #CC6700;
+}
+
+.edit-options .edith {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.edit-options .edith:hover {
+    color: #CC6700;
+}
+
+.popup-edit-publication {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-edit-publication .popup-content {
+    background: #fff;
+    padding: 2rem;
+    height: 50rem;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    overflow-x: hidden;
+    
+}
+
+.popup-edit-publication .popup-content textarea {
+    width: 95%;
+    height: 100px;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    resize: none;
+}
+
+.popup-edit-publication .popup-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.popup-edit-publication .popup-content h2 {
+    color: black;
+}
+
+.popup-edit-publication .popup-content .salvar {
+    background: #CC6700;
+    border-style: none;
+    border-radius: 5px;
+    padding: 0.5rem;
+    color: #fff;
+}
+
+.popup-edit-publication .popup-content .sair {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+
+.h1-publication{
+    color: #CC6700;
+    font-size: 40px;
+    text-align: center;
+}

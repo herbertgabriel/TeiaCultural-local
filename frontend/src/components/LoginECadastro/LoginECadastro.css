@@ -1,0 +1,109 @@
+.login-cadastro-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 40px;
+  color: black;
+}
+
+.login-container h1,
+.cadastro-container h1 {
+  margin-bottom: 20px;
+}
+
+.login-container form,
+.cadastro-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.login-container input[type="email"],
+.login-container input[type="password"],
+.cadastro-container input[type="email"],
+.cadastro-container input[type="password"],
+.cadastro-container input[type="text"],
+.cadastro-container input[type="tel"] {
+  padding: 8px;
+  font-size: 1rem;
+  margin-bottom: 15px;
+  width: 100%;
+  border-radius: 50px;
+  border-style: none;
+  border: 1px solid gray;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-container input {
+  margin-right: 10px;
+}
+
+.login-container button,
+.cadastro-container button {
+  padding: 10px;
+  font-size: 1rem;
+  background-color: #f57c00;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  color: white;
+  width: 105%;
+}
+
+.login-container button:hover,
+.cadastro-container button:hover {
+  opacity: 0.9;
+}
+
+.login-container h1,
+.cadastro-container h1 {
+  font-weight: 550;
+  color: black;
+}
+
+.login-container span,
+.cadastro-container span {
+  color: #f57c00;
+  cursor: pointer;
+}
+
+.container-align {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.FacebookEGoogle {
+  display: flex;
+  gap: 5rem;
+  font-size: 1.5rem;
+}
+
+.checkbox-container {
+  align-self: flex-start;
+  margin-bottom: 0.7rem;
+}
+
+.error-message {
+  color: red;
+  margin-bottom: 15px;
+}
+
+.login-container p,
+.cadastro-container p {
+  font-weight: 550;
+  color: black;
+}
+
+.checkbox-container label{
+  color: black;
+  font-size: 0.9rem;
+}

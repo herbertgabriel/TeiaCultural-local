@@ -1,0 +1,13 @@
+body {
+  background: #1b1301;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+
+* {
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}

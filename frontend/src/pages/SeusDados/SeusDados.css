@@ -1,0 +1,95 @@
+#geraldo {
+    display: flex;
+    gap: 3rem;
+    padding: 20px;
+    justify-content: center;
+}
+
+#geraldo{
+    font-size: x-large;
+
+}
+
+.geral {
+    width: 30%;
+}
+
+#geraldo h2 {
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+#geraldo a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+#geraldo a.delete {
+    color: red;
+}
+
+.laranja {
+    color: #CC6700;
+    font-size: x-large;
+    margin-bottom: 0.5rem;
+}
+
+.input {
+    background-color: #000000f4;
+    padding: 0.5rem 1rem;
+    border-radius: 18px;
+    border: none;
+    color: #CC6700;
+    font-size: x-large;
+    margin-bottom: 1rem;
+}
+
+.section1, .section2 {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+}
+
+.lapis {
+    color: #CC6700;
+    margin-left: 10px;
+}
+
+.container-delete-popup .popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: black;
+    
+}
+
+.container-delete-popup .popup-content h2 {
+    margin-bottom: 20px;
+}
+
+.container-delete-popup .popup-content label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.container-delete-popup .popup-content input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.container-delete-popup .button-template {
+    cursor: pointer;
+    color: #FFF;
+    background-color: #CC6700;
+    padding: 10px;
+    border-radius: 18px;
+    border: none;
+    margin: 5px;
+}
+
+.container-delete-popup .button-template:hover {
+    background-color: #b35900;
+}

@@ -1,0 +1,14 @@
+.container-event {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.Evento-header {
+    display: flex;
+}
+
+.container-evento{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

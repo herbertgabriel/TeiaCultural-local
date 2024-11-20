@@ -1,0 +1,55 @@
+.container-publication-profile {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    max-height: 400px; /* Limite de altura para a publicação */
+    overflow-y: auto; /* Cria uma barra de rolagem quando necessário */
+    background-color: orange;
+    border-radius: 10px;
+    padding: 10px; /* Adiciona um pouco de padding para o conteúdo */
+    box-sizing: border-box; /* Inclui padding e border no tamanho total do elemento */
+}
+
+
+
+.container-content p{
+    padding-left: 1rem;
+}
+
+.container-imagens {
+    display: grid;
+    gap: 1rem;
+    margin: 1rem auto 0 auto; /* Centraliza o contêiner de imagens */
+    max-width: 400px; /* Ajuste conforme necessário */
+}
+
+.container-imagens img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    object-fit: cover; /* Mantém a proporção da imagem sem esticar */
+}
+
+.container-imagens.one img {
+    height: 400px; /* Altura maior para uma única imagem */
+}
+
+.container-imagens.two {
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas */
+}
+
+.container-imagens.three {
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas */
+    grid-template-rows: auto auto; /* 2 linhas */
+}
+
+.container-imagens.three img:nth-child(3) {
+    grid-column: span 2; /* A terceira imagem ocupa duas colunas */
+    height: 200px; /* Altura fixa para a terceira imagem */
+}
+
+.container-imagens.four {
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas */
+    grid-template-rows: repeat(2, 1fr); /* 2 linhas */
+}
+

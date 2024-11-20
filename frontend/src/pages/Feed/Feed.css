@@ -1,0 +1,27 @@
+.container-filtros {
+    display: flex;
+    justify-content: center; /* Centraliza os botões horizontalmente */
+    gap: 1rem; /* Espaçamento entre os botões */
+    margin: 5rem 0 1rem 0; /* Margem superior e inferior */
+}
+
+.container-carregar-mais{
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+    gap: 1rem;
+}
+.container-carregar-mais button{
+    padding: 0.2rem ;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: transparent;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+
+}
+.container-carregar-mais span{
+    text-align: center;
+}

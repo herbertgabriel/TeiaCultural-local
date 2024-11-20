@@ -1,0 +1,74 @@
+.popup-acess {
+    position: fixed;
+    top: 20%;
+    right: -400px; /* Inicialmente fora da tela */
+    background-color: #CC6700;
+    padding: 1rem;
+    border-radius: 18px 0 0 18px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    transition: right 0.3s ease-in-out; /* Adiciona a transição */
+}
+
+.popup-acess.open {
+    right: 0; /* Move para dentro da tela */
+}
+
+.popup-acess .box {
+    margin-bottom: 1rem;
+}
+
+.boxes-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title {
+    font-size: x-large;
+    margin-bottom: 1rem;
+}
+
+.title-box {
+    font-size: 18px;
+}
+
+.nivel {
+    font-size: 14px;
+}
+
+.text-icon {
+    font-size: larger;
+    margin-top: 5px;
+}
+
+.level-container {
+    display: flex;
+}
+
+.level-1, .level-2, .level-3 {
+    background-color: #FFF;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    padding: 3px 19px;
+    border: solid 1px #CC6700;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.level-1:hover, .level-2:hover, .level-3:hover {
+    background-color: #CC6700;
+}
+
+.tamanho-fonte, .contraste, .fonte, .saturacao {
+    padding: 1px 10px 5px 10px;
+    border-radius: 6px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.tamanho-fonte p, .contraste p, .fonte p, .saturacao p {
+    margin-bottom: 7px;
+}
+
+.column-left {
+    margin-right: 1.1rem;
+}

@@ -1,0 +1,14 @@
+.foto-perfil {
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.foto-perfil.large {
+    width: 9.375rem; 
+    height: 9.375rem; 
+}
+
+.foto-perfil.small {
+    width: 3.125rem; 
+    height: 3.125rem; 
+}

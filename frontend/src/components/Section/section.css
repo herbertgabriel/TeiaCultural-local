@@ -1,0 +1,39 @@
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  /* gap: 80px; */
+}
+  
+.image-left {
+  flex-direction: row;
+}
+  
+.image-right {
+  flex-direction: row-reverse;
+}
+  
+.section-image {
+  display: flex;
+  justify-content: center;
+}
+  
+.section-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.section-content:nth-child(2) {
+  max-width: 800px;
+}
+  
+.section-content h1 {
+  color: #F57C00;
+  font-size: 4rem;
+  margin-bottom: 10px;
+}
+  
+.section-content p {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
