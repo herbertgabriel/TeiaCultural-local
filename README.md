@@ -74,4 +74,3 @@ Catalogar artistas locais e sua respectiva arte, artesanato e/ou produto, ideali
  <a href="https://github.com/carloscelestino1"> <img height="50px" width="50px" src="https://avatars.githubusercontent.com/u/49007553?s=64&v=4"/></a>
 
 ---
-<div align="center">Feito por <a href="https://github.com/AbnerMS">Abner Miranda</a>.</div>
