@@ -3,7 +3,7 @@
     <span>Teia Cultural</span>
 </h1>
 
-Repositório desenvolvido para o versionameto do site [**"Teia Cultural"**]().
+Este projeto é composto por duas partes: o Back-End e o Front-End. Para executar o projeto, primeiro inicie o back-end e, em seguida, siga as instruções no README.md do repositório do front-end.
 
 ## Objetivo
 Desenvolver um serviço de rede social exclusivo para profissionais ligados à cultura de Pernambuco, que oferece visibilidade e facilita conexões e oportunidades comerciais.
