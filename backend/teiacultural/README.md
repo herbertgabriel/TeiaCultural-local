@@ -43,11 +43,13 @@ Você precisa gerar um par de chaves RSA usando o OpenSSL. Se não tiver o OpenS
 
 Execute os seguintes comandos no terminal para gerar a chave privada (app.key) e a chave pública
 
+```
 src/
  └── main/
       └── resources/
            ├── app.key
            └── app.pub
+```
 
 Gerar a chave privada (app.key):
 ```bash
