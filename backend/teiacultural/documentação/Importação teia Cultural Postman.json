@@ -1,0 +1,1353 @@
+{
+  "info": {
+    "name": "Teia Cultural",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "bruno",
+      "event": []
+    },
+    {
+      "name": "Admin",
+      "item": [
+        {
+          "name": "Add Premium Profile by ID (ADMIN)",
+          "event": [],
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "key": "token",
+                "value": "{{acessToken}}",
+                "type": "string"
+              }
+            },
+            "description": "",
+            "url": {
+              "raw": "http://localhost:8080/users/37af3c40-2ced-47ca-afb5-1025e898591b/add-premium-details",
+              "protocol": "http",
+              "host": [
+                "localhost:8080"
+              ],
+              "path": [
+                "users",
+                "37af3c40-2ced-47ca-afb5-1025e898591b",
+                "add-premium-details"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"professionalName\": \"Ja mucou\",\n  \"category\": \"Categoria\",\n  \"aboutMe\": \"Sobre mim\",\n  \"socialMedia\": \"https://socialmedia.com/perfil\",\n  \"localization\": \"Localização\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "Delete User (ADMIN)",
+          "event": [],
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "key": "token",
+                "value": "{{acessToken}}",
+                "type": "string"
+              }
+            },
+            "description": "",
+            "url": {
+              "raw": "http://localhost:8080/users/delete/241377d0-2daf-4f6b-a8e9-f7e664eba0fb",
+              "protocol": "http",
+              "host": [
+                "localhost:8080"
+              ],
+              "path": [
+                "users",
+                "delete",
+                "241377d0-2daf-4f6b-a8e9-f7e664eba0fb"
+              ],
+              "query": [],
+              "variable": []
+            }
+          }
+        },
+        {
+          "name": "Downgrade to Basic (ADMIN)",
+          "event": [],
+          "request": {
+            "method": "POST",
+            "header": [],
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "key": "token",
+                "value": "{{acessToken}}",
+                "type": "string"
+              }
+            },
+            "description": "",
+            "url": {
+              "raw": "http://localhost:8080/users/37af3c40-2ced-47ca-afb5-1025e898591b/downgrade-to-basic",
+              "protocol": "http",
+              "host": [
+                "localhost:8080"
+              ],
+              "path": [
+                "users",
+                "37af3c40-2ced-47ca-afb5-1025e898591b",
+                "downgrade-to-basic"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"username\": \"@apodemucar\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "Listar Users (ADMIN)",
+          "event": [],
+          "request": {
+            "method": "GET",
+            "header": [],
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "key": "token",
+                "value": "{{acessToken}}",
+                "type": "string"
+              }
+            },
+            "description": "",
+            "url": {
+              "raw": "http://localhost:8080/users",
+              "protocol": "http",
+              "host": [
+                "localhost:8080"
+              ],
+              "path": [
+                "users"
+              ],
+              "query": [],
+              "variable": []
+            }
+          }
+        },
+        {
+          "name": "Upgrade to Premium (ADMIN)",
+          "event": [],
+          "request": {
+            "method": "POST",
+            "header": [],
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "key": "token",
+                "value": "{{acessToken}}",
+                "type": "string"
+              }
+            },
+            "description": "",
+            "url": {
+              "raw": "http://localhost:8080/users/37af3c40-2ced-47ca-afb5-1025e898591b/upgrade-to-premium",
+              "protocol": "http",
+              "host": [
+                "localhost:8080"
+              ],
+              "path": [
+                "users",
+                "37af3c40-2ced-47ca-afb5-1025e898591b",
+                "upgrade-to-premium"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"username\": \"@japoademucar\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Publication",
+      "item": [
+        {
+          "name": "Create publication",
+          "event": [],
+          "request": {
+            "method": "POST",
+            "header": [],
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "key": "token",
+                "value": "{{acessToken}}",
+                "type": "string"
+              }
+            },
+            "description": "",
+            "url": {
+              "raw": "http://localhost:8080/publications",
+              "protocol": "http",
+              "host": [
+                "localhost:8080"
+              ],
+              "path": [
+                "publications"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "content",
+                  "value": "Me contratem pf",
+                  "disabled": false,
+                  "type": "default"
+                },
+                {
+                  "key": "imageUrl1",
+                  "value": [
+                    ""
+                  ],
+                  "disabled": false,
+                  "type": "default"
+                },
+                {
+                  "key": "imageUrl2",
+                  "value": [
+                    ""
+                  ],
+                  "disabled": false,
+                  "type": "default"
+                },
+                {
+                  "key": "imageUrl3",
+                  "value": [
+                    "C:\\Users\\herbe\\Downloads\\images.jpg"
+                  ],
+                  "disabled": false,
+                  "type": "default"
+                },
+                {
+                  "key": "imageUrl4",
+                  "value": [
+                    ""
+                  ],
+                  "disabled": false,
+                  "type": "default"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Delete publication",
+          "event": [],
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "key": "token",
+                "value": "{{acessToken}}",
+                "type": "string"
+              }
+            },
+            "description": "",
+            "url": {
+              "raw": "http://localhost:8080/publications/602",
+              "protocol": "http",
+              "host": [
+                "localhost:8080"
+              ],
+              "path": [
+                "publications",
+                "602"
+              ],
+              "query": [],
+              "variable": []
+            }
+          }
+        },
+        {
+          "name": "Feed",
+          "event": [],
+          "request": {
+            "method": "GET",
+            "header": [],
+            "auth": null,
+            "description": "",
+            "url": {
+              "raw": "http://localhost:8080/feed",
+              "protocol": "http",
+              "host": [
+                "localhost:8080"
+              ],
+              "path": [
+                "feed"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"content\": \"Oi pessoas\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "Update publication",
+          "event": [],
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "key": "token",
+                "value": "{{acessToken}}",
+                "type": "string"
+              }
+            },
+            "description": "",
+            "url": {
+              "raw": "http://localhost:8080/publications/1205",
+              "protocol": "http",
+              "host": [
+                "localhost:8080"
+              ],
+              "path": [
+                "publications",
+                "1205"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "content",
+                  "value": "Oioisim",
+                  "disabled": false,
+                  "type": "default"
+                },
+                {
+                  "key": "imageUrl1",
+                  "value": [
+                    "C:\\Users\\herbe\\Downloads\\@turmaaretade_profile88a93974-e9fc-451b-a778-905ff8f8a13d(1).jpg"
+                  ],
+                  "disabled": false,
+                  "type": "default"
+                },
+                {
+                  "key": "imageUrl2",
+                  "value": [
+                    "C:\\Users\\herbe\\Downloads\\@japode_publications2f34c4c5-ac2b-4c75-a85c-1f6c1811a24a(1).jpg"
+                  ],
+                  "disabled": false,
+                  "type": "default"
+                },
+                {
+                  "key": "imageUrl3",
+                  "value": [
+                    ""
+                  ],
+                  "disabled": false,
+                  "type": "default"
+                },
+                {
+                  "key": "imageUrl4",
+                  "value": [
+                    ""
+                  ],
+                  "disabled": false,
+                  "type": "default"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Events",
+      "item": [
+        {
+          "name": "Add Event",
+          "event": [],
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "key": "token",
+                "value": "{{acessToken}}",
+                "type": "string"
+              }
+            },
+            "description": "",
+            "url": {
+              "raw": "http://localhost:8080/event",
+              "protocol": "http",
+              "host": [
+                "localhost:8080"
+              ],
+              "path": [
+                "event"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "title",
+                  "value": "Artesanapp Desenvolve Artesanato",
+                  "disabled": false,
+                  "type": "default"
+                },
+                {
+                  "key": "description",
+                  "value": "Evento Sobre Artesanato e Programação Web",
+                  "disabled": false,
+                  "type": "default"
+                },
+                {
+                  "key": "location",
+                  "value": "Cais do Sertão",
+                  "disabled": false,
+                  "type": "default"
+                },
+                {
+                  "key": "category",
+                  "value": "Artesanato",
+                  "disabled": false,
+                  "type": "default"
+                },
+                {
+                  "key": "date",
+                  "value": "17/02/2003",
+                  "disabled": false,
+                  "type": "default"
+                },
+                {
+                  "key": "eventWebSiteUrl",
+                  "value": "www.google.com.br",
+                  "disabled": false,
+                  "type": "default"
+                },
+                {
+                  "key": "imageUrl",
+                  "value": [
+                    "C:\\Users\\herbe\\Downloads\\@turmaaretade_profile88a93974-e9fc-451b-a778-905ff8f8a13d.jpg"
+                  ],
+                  "disabled": false,
+                  "type": "default"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Delete Event",
+          "event": [],
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "key": "token",
+                "value": "{{acessToken}}",
+                "type": "string"
+              }
+            },
+            "description": "",
+            "url": {
+              "raw": "http://localhost:8080/event/",
+              "protocol": "http",
+              "host": [
+                "localhost:8080"
+              ],
+              "path": [
+                "event",
+                ""
+              ],
+              "query": [],
+              "variable": []
+            }
+          }
+        },
+        {
+          "name": "Events PAGED",
+          "event": [],
+          "request": {
+            "method": "GET",
+            "header": [],
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "key": "token",
+                "value": "{{acessToken}}",
+                "type": "string"
+              }
+            },
+            "description": "",
+            "url": {
+              "raw": "http://localhost:8080/events",
+              "protocol": "http",
+              "host": [
+                "localhost:8080"
+              ],
+              "path": [
+                "events"
+              ],
+              "query": [],
+              "variable": []
+            }
+          }
+        },
+        {
+          "name": "Update Event",
+          "event": [],
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "key": "token",
+                "value": "{{acessToken}}",
+                "type": "string"
+              }
+            },
+            "description": "",
+            "url": {
+              "raw": "http://localhost:8080/events/102",
+              "protocol": "http",
+              "host": [
+                "localhost:8080"
+              ],
+              "path": [
+                "events",
+                "102"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "title",
+                  "value": "OI321",
+                  "disabled": false,
+                  "type": "default"
+                },
+                {
+                  "key": "description",
+                  "value": "Oi312",
+                  "disabled": false,
+                  "type": "default"
+                },
+                {
+                  "key": "location",
+                  "value": "oi123",
+                  "disabled": false,
+                  "type": "default"
+                },
+                {
+                  "key": "category",
+                  "value": "sim123",
+                  "disabled": false,
+                  "type": "default"
+                },
+                {
+                  "key": "date",
+                  "value": "321321",
+                  "disabled": false,
+                  "type": "default"
+                },
+                {
+                  "key": "eventWebSiteUrl",
+                  "value": "123123",
+                  "disabled": false,
+                  "type": "default"
+                },
+                {
+                  "key": "imageUrl",
+                  "value": [
+                    "C:\\Users\\herbe\\Desktop\\Resume.png"
+                  ],
+                  "disabled": false,
+                  "type": "default"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Publics",
+      "item": [
+        {
+          "name": "Feed by Category NO PAGED",
+          "event": [],
+          "request": {
+            "method": "GET",
+            "header": [],
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "key": "token",
+                "value": "{{acessToken}}",
+                "type": "string"
+              }
+            },
+            "description": "",
+            "url": {
+              "raw": "http://localhost:8080/feed/category/artesanato",
+              "protocol": "http",
+              "host": [
+                "localhost:8080"
+              ],
+              "path": [
+                "feed",
+                "category",
+                "artesanato"
+              ],
+              "query": [],
+              "variable": []
+            }
+          }
+        },
+        {
+          "name": "Feed by Category PAGED",
+          "event": [],
+          "request": {
+            "method": "GET",
+            "header": [],
+            "auth": null,
+            "description": "",
+            "url": {
+              "raw": "http://localhost:8080/feed/filter/username/@japode2",
+              "protocol": "http",
+              "host": [
+                "localhost:8080"
+              ],
+              "path": [
+                "feed",
+                "filter",
+                "username",
+                "@japode2"
+              ],
+              "query": [],
+              "variable": []
+            }
+          }
+        },
+        {
+          "name": "Feed by user NO PAGED",
+          "event": [],
+          "request": {
+            "method": "GET",
+            "header": [],
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "key": "token",
+                "value": "{{acessToken}}",
+                "type": "string"
+              }
+            },
+            "description": "",
+            "url": {
+              "raw": "http://localhost:8080/feed/username/@",
+              "protocol": "http",
+              "host": [
+                "localhost:8080"
+              ],
+              "path": [
+                "feed",
+                "username",
+                "@"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"content\": \"Oi pessoas\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "Feed by user PAGED",
+          "event": [],
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "",
+                "value": "",
+                "disabled": false,
+                "type": "default"
+              }
+            ],
+            "auth": null,
+            "description": "",
+            "url": {
+              "raw": "http://localhost:8080/feed/filter/category/Artesanato",
+              "protocol": "http",
+              "host": [
+                "localhost:8080"
+              ],
+              "path": [
+                "feed",
+                "filter",
+                "category",
+                "Artesanato"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"content\": \"Oi pessoas\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "List by Category",
+          "event": [],
+          "request": {
+            "method": "GET",
+            "header": [],
+            "auth": null,
+            "description": "",
+            "url": {
+              "raw": "http://localhost:8080/users/category/rifa",
+              "protocol": "http",
+              "host": [
+                "localhost:8080"
+              ],
+              "path": [
+                "users",
+                "category",
+                "rifa"
+              ],
+              "query": [],
+              "variable": []
+            }
+          }
+        },
+        {
+          "name": "List by Username",
+          "event": [],
+          "request": {
+            "method": "GET",
+            "header": [],
+            "auth": null,
+            "description": "",
+            "url": {
+              "raw": "http://localhost:8080/users/username/@turmaaretade",
+              "protocol": "http",
+              "host": [
+                "localhost:8080"
+              ],
+              "path": [
+                "users",
+                "username",
+                "@turmaaretade"
+              ],
+              "query": [],
+              "variable": []
+            }
+          }
+        },
+        {
+          "name": "Listar Profile Publications",
+          "event": [],
+          "request": {
+            "method": "GET",
+            "header": [],
+            "auth": null,
+            "description": "",
+            "url": {
+              "raw": "http://localhost:8080/profile/publications/@turmaaretade",
+              "protocol": "http",
+              "host": [
+                "localhost:8080"
+              ],
+              "path": [
+                "profile",
+                "publications",
+                "@turmaaretade"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "body": {
+              "mode": "raw",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "Login",
+          "event": [],
+          "request": {
+            "method": "POST",
+            "header": [],
+            "auth": null,
+            "description": "",
+            "url": {
+              "raw": "http://localhost:8080/login",
+              "protocol": "http",
+              "host": [
+                "localhost:8080"
+              ],
+              "path": [
+                "login"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"email\": \"admin@gmail.com\",\n  \"password\": \"123\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "Profile User",
+          "event": [],
+          "request": {
+            "method": "GET",
+            "header": [],
+            "auth": null,
+            "description": "",
+            "url": {
+              "raw": "http://localhost:8080/profile/username/@turmaaretade",
+              "protocol": "http",
+              "host": [
+                "localhost:8080"
+              ],
+              "path": [
+                "profile",
+                "username",
+                "@turmaaretade"
+              ],
+              "query": [],
+              "variable": []
+            }
+          }
+        },
+        {
+          "name": "SignUp",
+          "event": [],
+          "request": {
+            "method": "POST",
+            "header": [],
+            "auth": null,
+            "description": "",
+            "url": {
+              "raw": "http://localhost:8080/users",
+              "protocol": "http",
+              "host": [
+                "localhost:8080"
+              ],
+              "path": [
+                "users"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"email\": \"user5@gmail.com\",\n  \"password\": \"123\",\n  \"name\": \"herbert\",\n  \"cpf\": \"12345\",\n  \"telephone\": \"12345\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "User",
+      "item": [
+        {
+          "name": "Delete Accont",
+          "event": [],
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "key": "token",
+                "value": "{{acessToken}}",
+                "type": "string"
+              }
+            },
+            "description": "",
+            "url": {
+              "raw": "http://localhost:8080/user/delete",
+              "protocol": "http",
+              "host": [
+                "localhost:8080"
+              ],
+              "path": [
+                "user",
+                "delete"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "title",
+                  "value": "oi",
+                  "disabled": false,
+                  "type": "default"
+                },
+                {
+                  "key": "description",
+                  "value": "sim",
+                  "disabled": false,
+                  "type": "default"
+                },
+                {
+                  "key": "location",
+                  "value": "aa",
+                  "disabled": false,
+                  "type": "default"
+                },
+                {
+                  "key": "category",
+                  "value": "sim",
+                  "disabled": false,
+                  "type": "default"
+                },
+                {
+                  "key": "imageUrl",
+                  "value": [
+                    "C:\\Users\\herbe\\Desktop\\Resume.png"
+                  ],
+                  "disabled": false,
+                  "type": "default"
+                },
+                {
+                  "key": "date",
+                  "value": "12",
+                  "disabled": false,
+                  "type": "default"
+                },
+                {
+                  "key": "eventWebSiteUrl",
+                  "value": "sim",
+                  "disabled": false,
+                  "type": "default"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Get Profile",
+          "event": [],
+          "request": {
+            "method": "GET",
+            "header": [],
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "key": "token",
+                "value": "{{acessToken}}",
+                "type": "string"
+              }
+            },
+            "description": "",
+            "url": {
+              "raw": "http://localhost:8080/profile",
+              "protocol": "http",
+              "host": [
+                "localhost:8080"
+              ],
+              "path": [
+                "profile"
+              ],
+              "query": [],
+              "variable": []
+            }
+          }
+        },
+        {
+          "name": "Get Publications",
+          "event": [],
+          "request": {
+            "method": "GET",
+            "header": [],
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "key": "token",
+                "value": "{{acessToken}}",
+                "type": "string"
+              }
+            },
+            "description": "",
+            "url": {
+              "raw": "http://localhost:8080/publications",
+              "protocol": "http",
+              "host": [
+                "localhost:8080"
+              ],
+              "path": [
+                "publications"
+              ],
+              "query": [],
+              "variable": []
+            }
+          }
+        },
+        {
+          "name": "Preencher Profile PREMIUM",
+          "event": [],
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "key": "token",
+                "value": "{{acessToken}}",
+                "type": "string"
+              }
+            },
+            "description": "",
+            "url": {
+              "raw": "http://localhost:8080/users/add-premium-details",
+              "protocol": "http",
+              "host": [
+                "localhost:8080"
+              ],
+              "path": [
+                "users",
+                "add-premium-details"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "profilePicture",
+                  "value": [
+                    ""
+                  ],
+                  "disabled": false,
+                  "type": "default"
+                },
+                {
+                  "key": "professionalName",
+                  "value": "Japodealmocar",
+                  "disabled": false,
+                  "type": "default"
+                },
+                {
+                  "key": "category",
+                  "value": "artesanato | destaque",
+                  "disabled": false,
+                  "type": "default"
+                },
+                {
+                  "key": "aboutMe",
+                  "value": "Sobre mim",
+                  "disabled": false,
+                  "type": "default"
+                },
+                {
+                  "key": "socialMedia",
+                  "value": "@japodealmocar",
+                  "disabled": false,
+                  "type": "default"
+                },
+                {
+                  "key": "localization",
+                  "value": "Rua da Augusta",
+                  "disabled": false,
+                  "type": "default"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Update User",
+          "event": [],
+          "request": {
+            "method": "POST",
+            "header": [],
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "key": "token",
+                "value": "{{acessToken}}",
+                "type": "string"
+              }
+            },
+            "description": "",
+            "url": {
+              "raw": "http://localhost:8080/users/37af3c40-2ced-47ca-afb5-1025e898591b/upgrade-to-premium",
+              "protocol": "http",
+              "host": [
+                "localhost:8080"
+              ],
+              "path": [
+                "users",
+                "37af3c40-2ced-47ca-afb5-1025e898591b",
+                "upgrade-to-premium"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"username\": \"@japoademucar\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Upgrade Downgrade",
+      "item": [
+        {
+          "name": "Create Publication",
+          "event": [],
+          "request": {
+            "method": "POST",
+            "header": [],
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "key": "token",
+                "value": "{{acessToken}}",
+                "type": "string"
+              }
+            },
+            "description": "",
+            "url": {
+              "raw": "http://localhost:8080/publications",
+              "protocol": "http",
+              "host": [
+                "localhost:8080"
+              ],
+              "path": [
+                "publications"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "content",
+                  "value": "aa",
+                  "disabled": false,
+                  "type": "default"
+                },
+                {
+                  "key": "imageUrl1",
+                  "value": [
+                    "C:\\Users\\herbe\\Downloads\\images.jpg"
+                  ],
+                  "disabled": false,
+                  "type": "default"
+                },
+                {
+                  "key": "imageUrl2",
+                  "value": [
+                    "C:\\Users\\herbe\\Downloads\\images.jpg"
+                  ],
+                  "disabled": true,
+                  "type": "default"
+                },
+                {
+                  "key": "imageUrl3",
+                  "value": [
+                    "C:\\Users\\herbe\\Downloads\\images.jpg"
+                  ],
+                  "disabled": true,
+                  "type": "default"
+                },
+                {
+                  "key": "imageUrl4",
+                  "value": [
+                    ""
+                  ],
+                  "disabled": true,
+                  "type": "default"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Downgrade to Basic (PREMIUM)",
+          "event": [],
+          "request": {
+            "method": "POST",
+            "header": [],
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "key": "token",
+                "value": "{{acessToken}}",
+                "type": "string"
+              }
+            },
+            "description": "",
+            "url": {
+              "raw": "http://localhost:8080/users/downgrade-to-basic",
+              "protocol": "http",
+              "host": [
+                "localhost:8080"
+              ],
+              "path": [
+                "users",
+                "downgrade-to-basic"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "body": {
+              "mode": "raw",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "Upgrade to Premium (BASIC)",
+          "event": [],
+          "request": {
+            "method": "POST",
+            "header": [],
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "key": "token",
+                "value": "{{acessToken}}",
+                "type": "string"
+              }
+            },
+            "description": "",
+            "url": {
+              "raw": "http://localhost:8080/users/upgrade-to-premium",
+              "protocol": "http",
+              "host": [
+                "localhost:8080"
+              ],
+              "path": [
+                "users",
+                "upgrade-to-premium"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"username\": \"@japode332\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "variable": [
+    {
+      "key": "acessToken",
+      "value": "",
+      "type": "default"
+    }
+  ]
+}

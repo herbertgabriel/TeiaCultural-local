@@ -1,0 +1,1248 @@
+{
+  "name": "Teia Cultural",
+  "version": "1",
+  "items": [
+    {
+      "type": "folder",
+      "name": "Admin",
+      "items": [
+        {
+          "type": "http",
+          "name": "Add Premium Profile by ID (ADMIN)",
+          "seq": 3,
+          "request": {
+            "url": "http://localhost:8080/users/37af3c40-2ced-47ca-afb5-1025e898591b/add-premium-details",
+            "method": "PATCH",
+            "headers": [],
+            "params": [],
+            "body": {
+              "mode": "json",
+              "json": "{\n  \"professionalName\": \"Ja mucou\",\n  \"category\": \"Categoria\",\n  \"aboutMe\": \"Sobre mim\",\n  \"socialMedia\": \"https://socialmedia.com/perfil\",\n  \"localization\": \"Localização\"\n}",
+              "formUrlEncoded": [],
+              "multipartForm": []
+            },
+            "script": {},
+            "vars": {},
+            "assertions": [],
+            "tests": "",
+            "auth": {
+              "mode": "bearer",
+              "bearer": {
+                "token": "{{acessToken}}"
+              }
+            }
+          }
+        },
+        {
+          "type": "http",
+          "name": "Delete User (ADMIN)",
+          "seq": 2,
+          "request": {
+            "url": "http://localhost:8080/users/delete/241377d0-2daf-4f6b-a8e9-f7e664eba0fb",
+            "method": "DELETE",
+            "headers": [],
+            "params": [],
+            "body": {
+              "mode": "none",
+              "formUrlEncoded": [],
+              "multipartForm": []
+            },
+            "script": {},
+            "vars": {},
+            "assertions": [],
+            "tests": "",
+            "auth": {
+              "mode": "bearer",
+              "bearer": {
+                "token": "{{acessToken}}"
+              }
+            }
+          }
+        },
+        {
+          "type": "http",
+          "name": "Downgrade to Basic (ADMIN)",
+          "seq": 4,
+          "request": {
+            "url": "http://localhost:8080/users/37af3c40-2ced-47ca-afb5-1025e898591b/downgrade-to-basic",
+            "method": "POST",
+            "headers": [],
+            "params": [],
+            "body": {
+              "mode": "json",
+              "json": "{\n  \"username\": \"@apodemucar\"\n}",
+              "formUrlEncoded": [],
+              "multipartForm": []
+            },
+            "script": {},
+            "vars": {},
+            "assertions": [],
+            "tests": "",
+            "auth": {
+              "mode": "bearer",
+              "bearer": {
+                "token": "{{acessToken}}"
+              }
+            }
+          }
+        },
+        {
+          "type": "http",
+          "name": "Listar Users (ADMIN)",
+          "seq": 1,
+          "request": {
+            "url": "http://localhost:8080/users",
+            "method": "GET",
+            "headers": [],
+            "params": [],
+            "body": {
+              "mode": "none",
+              "formUrlEncoded": [],
+              "multipartForm": []
+            },
+            "script": {},
+            "vars": {},
+            "assertions": [],
+            "tests": "",
+            "auth": {
+              "mode": "bearer",
+              "bearer": {
+                "token": "{{acessToken}}"
+              }
+            }
+          }
+        },
+        {
+          "type": "http",
+          "name": "Upgrade to Premium (ADMIN)",
+          "seq": 5,
+          "request": {
+            "url": "http://localhost:8080/users/37af3c40-2ced-47ca-afb5-1025e898591b/upgrade-to-premium",
+            "method": "POST",
+            "headers": [],
+            "params": [],
+            "body": {
+              "mode": "json",
+              "json": "{\n  \"username\": \"@japoademucar\"\n}",
+              "formUrlEncoded": [],
+              "multipartForm": []
+            },
+            "script": {},
+            "vars": {},
+            "assertions": [],
+            "tests": "",
+            "auth": {
+              "mode": "bearer",
+              "bearer": {
+                "token": "{{acessToken}}"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "folder",
+      "name": "Publication",
+      "items": [
+        {
+          "type": "http",
+          "name": "Create publication",
+          "seq": 2,
+          "request": {
+            "url": "http://localhost:8080/publications",
+            "method": "POST",
+            "headers": [],
+            "params": [],
+            "body": {
+              "mode": "multipartForm",
+              "json": "{\n  \"content\": null,\n  \"imageUrl1\": \"cachorro\",\n  \"imageUrl2\": null,\n  \"imageUrl3\": null,\n  \"imageUrl4\": null\n}",
+              "formUrlEncoded": [],
+              "multipartForm": [
+                {
+                  "type": "text",
+                  "name": "content",
+                  "value": "Me contratem pf",
+                  "enabled": true
+                },
+                {
+                  "type": "file",
+                  "name": "imageUrl1",
+                  "value": [
+                    ""
+                  ],
+                  "enabled": true
+                },
+                {
+                  "type": "file",
+                  "name": "imageUrl2",
+                  "value": [
+                    ""
+                  ],
+                  "enabled": true
+                },
+                {
+                  "type": "file",
+                  "name": "imageUrl3",
+                  "value": [
+                    "C:\\Users\\herbe\\Downloads\\images.jpg"
+                  ],
+                  "enabled": true
+                },
+                {
+                  "type": "file",
+                  "name": "imageUrl4",
+                  "value": [
+                    ""
+                  ],
+                  "enabled": true
+                }
+              ]
+            },
+            "script": {},
+            "vars": {},
+            "assertions": [],
+            "tests": "",
+            "auth": {
+              "mode": "bearer",
+              "bearer": {
+                "token": "{{acessToken}}"
+              }
+            }
+          }
+        },
+        {
+          "type": "http",
+          "name": "Delete publication",
+          "seq": 1,
+          "request": {
+            "url": "http://localhost:8080/publications/602",
+            "method": "DELETE",
+            "headers": [],
+            "params": [],
+            "body": {
+              "mode": "none",
+              "formUrlEncoded": [],
+              "multipartForm": []
+            },
+            "script": {},
+            "vars": {},
+            "assertions": [],
+            "tests": "",
+            "auth": {
+              "mode": "bearer",
+              "bearer": {
+                "token": "{{acessToken}}"
+              }
+            }
+          }
+        },
+        {
+          "type": "http",
+          "name": "Feed",
+          "seq": 4,
+          "request": {
+            "url": "http://localhost:8080/feed",
+            "method": "GET",
+            "headers": [],
+            "params": [],
+            "body": {
+              "mode": "json",
+              "json": "{\n  \"content\": \"Oi pessoas\"\n}",
+              "formUrlEncoded": [],
+              "multipartForm": []
+            },
+            "script": {},
+            "vars": {},
+            "assertions": [],
+            "tests": "",
+            "auth": {
+              "mode": "none"
+            }
+          }
+        },
+        {
+          "type": "http",
+          "name": "Update publication",
+          "seq": 3,
+          "request": {
+            "url": "http://localhost:8080/publications/1205",
+            "method": "PATCH",
+            "headers": [],
+            "params": [],
+            "body": {
+              "mode": "multipartForm",
+              "json": "{\n  \"imageUrl2\": \"\",\n  \"content\": \"funciona pelo amor\"\n}",
+              "formUrlEncoded": [],
+              "multipartForm": [
+                {
+                  "type": "text",
+                  "name": "content",
+                  "value": "Oioisim",
+                  "enabled": true
+                },
+                {
+                  "type": "file",
+                  "name": "imageUrl1",
+                  "value": [
+                    "C:\\Users\\herbe\\Downloads\\@turmaaretade_profile88a93974-e9fc-451b-a778-905ff8f8a13d(1).jpg"
+                  ],
+                  "enabled": true
+                },
+                {
+                  "type": "file",
+                  "name": "imageUrl2",
+                  "value": [
+                    "C:\\Users\\herbe\\Downloads\\@japode_publications2f34c4c5-ac2b-4c75-a85c-1f6c1811a24a(1).jpg"
+                  ],
+                  "enabled": true
+                },
+                {
+                  "type": "file",
+                  "name": "imageUrl3",
+                  "value": [
+                    ""
+                  ],
+                  "enabled": true
+                },
+                {
+                  "type": "file",
+                  "name": "imageUrl4",
+                  "value": [
+                    ""
+                  ],
+                  "enabled": true
+                }
+              ]
+            },
+            "script": {},
+            "vars": {},
+            "assertions": [],
+            "tests": "",
+            "auth": {
+              "mode": "bearer",
+              "bearer": {
+                "token": "{{acessToken}}"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "folder",
+      "name": "Events",
+      "items": [
+        {
+          "type": "http",
+          "name": "Add Event",
+          "seq": 2,
+          "request": {
+            "url": "http://localhost:8080/event",
+            "method": "PATCH",
+            "headers": [],
+            "params": [],
+            "body": {
+              "mode": "multipartForm",
+              "json": "{\n  \"profilePicture\": \"https://socialmedia.com/perfil\",\n  \"professionalName\": \"Ja pode mucar\",\n  \"category\": \"rifa | artesanato\",\n  \"aboutMe\": \"Sobre mim\",\n  \"socialMedia\": \"@projetojapodemucar\",\n  \"localization\": \"Localização\"\n}",
+              "formUrlEncoded": [],
+              "multipartForm": [
+                {
+                  "type": "text",
+                  "name": "title",
+                  "value": "Artesanapp Desenvolve Artesanato",
+                  "enabled": true
+                },
+                {
+                  "type": "text",
+                  "name": "description",
+                  "value": "Evento Sobre Artesanato e Programação Web",
+                  "enabled": true
+                },
+                {
+                  "type": "text",
+                  "name": "location",
+                  "value": "Cais do Sertão",
+                  "enabled": true
+                },
+                {
+                  "type": "text",
+                  "name": "category",
+                  "value": "Artesanato",
+                  "enabled": true
+                },
+                {
+                  "type": "text",
+                  "name": "date",
+                  "value": "17/02/2003",
+                  "enabled": true
+                },
+                {
+                  "type": "text",
+                  "name": "eventWebSiteUrl",
+                  "value": "www.google.com.br",
+                  "enabled": true
+                },
+                {
+                  "type": "file",
+                  "name": "imageUrl",
+                  "value": [
+                    "C:\\Users\\herbe\\Downloads\\@turmaaretade_profile88a93974-e9fc-451b-a778-905ff8f8a13d.jpg"
+                  ],
+                  "enabled": true
+                }
+              ]
+            },
+            "script": {},
+            "vars": {},
+            "assertions": [],
+            "tests": "",
+            "auth": {
+              "mode": "bearer",
+              "bearer": {
+                "token": "{{acessToken}}"
+              }
+            }
+          }
+        },
+        {
+          "type": "http",
+          "name": "Delete Event",
+          "seq": 1,
+          "request": {
+            "url": "http://localhost:8080/event/",
+            "method": "DELETE",
+            "headers": [],
+            "params": [],
+            "body": {
+              "mode": "none",
+              "json": "{\n  \"profilePicture\": \"https://socialmedia.com/perfil\",\n  \"professionalName\": \"Ja pode mucar\",\n  \"category\": \"rifa | artesanato\",\n  \"aboutMe\": \"Sobre mim\",\n  \"socialMedia\": \"@projetojapodemucar\",\n  \"localization\": \"Localização\"\n}",
+              "formUrlEncoded": [],
+              "multipartForm": [
+                {
+                  "type": "text",
+                  "name": "title",
+                  "value": "oi",
+                  "enabled": true
+                },
+                {
+                  "type": "text",
+                  "name": "description",
+                  "value": "sim",
+                  "enabled": true
+                },
+                {
+                  "type": "text",
+                  "name": "location",
+                  "value": "aa",
+                  "enabled": true
+                },
+                {
+                  "type": "text",
+                  "name": "category",
+                  "value": "sim",
+                  "enabled": true
+                },
+                {
+                  "type": "file",
+                  "name": "imageUrl",
+                  "value": [
+                    "C:\\Users\\herbe\\Desktop\\Resume.png"
+                  ],
+                  "enabled": true
+                },
+                {
+                  "type": "text",
+                  "name": "date",
+                  "value": "12",
+                  "enabled": true
+                },
+                {
+                  "type": "text",
+                  "name": "eventWebSiteUrl",
+                  "value": "sim",
+                  "enabled": true
+                }
+              ]
+            },
+            "script": {},
+            "vars": {},
+            "assertions": [],
+            "tests": "",
+            "auth": {
+              "mode": "bearer",
+              "bearer": {
+                "token": "{{acessToken}}"
+              }
+            }
+          }
+        },
+        {
+          "type": "http",
+          "name": "Events PAGED",
+          "seq": 2,
+          "request": {
+            "url": "http://localhost:8080/events",
+            "method": "GET",
+            "headers": [],
+            "params": [],
+            "body": {
+              "mode": "none",
+              "json": "{\n  \"content\": \"Oi pessoas\"\n}",
+              "formUrlEncoded": [],
+              "multipartForm": []
+            },
+            "script": {},
+            "vars": {},
+            "assertions": [],
+            "tests": "",
+            "auth": {
+              "mode": "bearer",
+              "bearer": {
+                "token": "{{acessToken}}"
+              }
+            }
+          }
+        },
+        {
+          "type": "http",
+          "name": "Update Event",
+          "seq": 4,
+          "request": {
+            "url": "http://localhost:8080/events/102",
+            "method": "PUT",
+            "headers": [],
+            "params": [],
+            "body": {
+              "mode": "multipartForm",
+              "json": "{\n  \"profilePicture\": \"https://socialmedia.com/perfil\",\n  \"professionalName\": \"Ja pode mucar\",\n  \"category\": \"rifa | artesanato\",\n  \"aboutMe\": \"Sobre mim\",\n  \"socialMedia\": \"@projetojapodemucar\",\n  \"localization\": \"Localização\"\n}",
+              "formUrlEncoded": [],
+              "multipartForm": [
+                {
+                  "type": "text",
+                  "name": "title",
+                  "value": "OI321",
+                  "enabled": true
+                },
+                {
+                  "type": "text",
+                  "name": "description",
+                  "value": "Oi312",
+                  "enabled": true
+                },
+                {
+                  "type": "text",
+                  "name": "location",
+                  "value": "oi123",
+                  "enabled": true
+                },
+                {
+                  "type": "text",
+                  "name": "category",
+                  "value": "sim123",
+                  "enabled": true
+                },
+                {
+                  "type": "text",
+                  "name": "date",
+                  "value": "321321",
+                  "enabled": true
+                },
+                {
+                  "type": "text",
+                  "name": "eventWebSiteUrl",
+                  "value": "123123",
+                  "enabled": true
+                },
+                {
+                  "type": "file",
+                  "name": "imageUrl",
+                  "value": [
+                    "C:\\Users\\herbe\\Desktop\\Resume.png"
+                  ],
+                  "enabled": true
+                }
+              ]
+            },
+            "script": {},
+            "vars": {},
+            "assertions": [],
+            "tests": "",
+            "auth": {
+              "mode": "bearer",
+              "bearer": {
+                "token": "{{acessToken}}"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "folder",
+      "name": "Publics",
+      "items": [
+        {
+          "type": "http",
+          "name": "Feed by Category NO PAGED",
+          "seq": 10,
+          "request": {
+            "url": "http://localhost:8080/feed/category/artesanato",
+            "method": "GET",
+            "headers": [],
+            "params": [],
+            "body": {
+              "mode": "none",
+              "formUrlEncoded": [],
+              "multipartForm": []
+            },
+            "script": {},
+            "vars": {},
+            "assertions": [],
+            "tests": "",
+            "auth": {
+              "mode": "bearer",
+              "bearer": {
+                "token": "{{acessToken}}"
+              }
+            }
+          }
+        },
+        {
+          "type": "http",
+          "name": "Feed by Category PAGED",
+          "seq": 3,
+          "request": {
+            "url": "http://localhost:8080/feed/filter/username/@japode2",
+            "method": "GET",
+            "headers": [],
+            "params": [],
+            "body": {
+              "mode": "none",
+              "formUrlEncoded": [],
+              "multipartForm": []
+            },
+            "script": {},
+            "vars": {},
+            "assertions": [],
+            "tests": "",
+            "auth": {
+              "mode": "none"
+            }
+          }
+        },
+        {
+          "type": "http",
+          "name": "Feed by user NO PAGED",
+          "seq": 9,
+          "request": {
+            "url": "http://localhost:8080/feed/username/@",
+            "method": "GET",
+            "headers": [],
+            "params": [],
+            "body": {
+              "mode": "json",
+              "json": "{\n  \"content\": \"Oi pessoas\"\n}",
+              "formUrlEncoded": [],
+              "multipartForm": []
+            },
+            "script": {},
+            "vars": {},
+            "assertions": [],
+            "tests": "",
+            "auth": {
+              "mode": "bearer",
+              "bearer": {
+                "token": "{{acessToken}}"
+              }
+            }
+          }
+        },
+        {
+          "type": "http",
+          "name": "Feed by user PAGED",
+          "seq": 8,
+          "request": {
+            "url": "http://localhost:8080/feed/filter/category/Artesanato",
+            "method": "GET",
+            "headers": [
+              {
+                "name": "",
+                "value": "",
+                "enabled": true
+              }
+            ],
+            "params": [],
+            "body": {
+              "mode": "json",
+              "json": "{\n  \"content\": \"Oi pessoas\"\n}",
+              "formUrlEncoded": [],
+              "multipartForm": []
+            },
+            "script": {},
+            "vars": {},
+            "assertions": [],
+            "tests": "",
+            "auth": {
+              "mode": "none"
+            }
+          }
+        },
+        {
+          "type": "http",
+          "name": "List by Category",
+          "seq": 6,
+          "request": {
+            "url": "http://localhost:8080/users/category/rifa",
+            "method": "GET",
+            "headers": [],
+            "params": [],
+            "body": {
+              "mode": "none",
+              "formUrlEncoded": [],
+              "multipartForm": []
+            },
+            "script": {},
+            "vars": {},
+            "assertions": [],
+            "tests": "",
+            "auth": {
+              "mode": "none"
+            }
+          }
+        },
+        {
+          "type": "http",
+          "name": "List by Username",
+          "seq": 5,
+          "request": {
+            "url": "http://localhost:8080/users/username/@turmaaretade",
+            "method": "GET",
+            "headers": [],
+            "params": [],
+            "body": {
+              "mode": "none",
+              "formUrlEncoded": [],
+              "multipartForm": []
+            },
+            "script": {},
+            "vars": {},
+            "assertions": [],
+            "tests": "",
+            "auth": {
+              "mode": "none"
+            }
+          }
+        },
+        {
+          "type": "http",
+          "name": "Listar Profile Publications",
+          "seq": 4,
+          "request": {
+            "url": "http://localhost:8080/profile/publications/@turmaaretade",
+            "method": "GET",
+            "headers": [],
+            "params": [],
+            "body": {
+              "mode": "json",
+              "json": "",
+              "formUrlEncoded": [],
+              "multipartForm": []
+            },
+            "script": {},
+            "vars": {},
+            "assertions": [],
+            "tests": "",
+            "auth": {
+              "mode": "none"
+            }
+          }
+        },
+        {
+          "type": "http",
+          "name": "Login",
+          "seq": 1,
+          "request": {
+            "url": "http://localhost:8080/login",
+            "method": "POST",
+            "headers": [],
+            "params": [],
+            "body": {
+              "mode": "json",
+              "json": "{\n  \"email\": \"admin@gmail.com\",\n  \"password\": \"123\"\n}",
+              "formUrlEncoded": [],
+              "multipartForm": []
+            },
+            "script": {},
+            "vars": {
+              "res": [
+                {
+                  "name": "acessToken",
+                  "value": "res.body.acessToken",
+                  "enabled": true,
+                  "local": false
+                }
+              ]
+            },
+            "assertions": [],
+            "tests": "",
+            "auth": {
+              "mode": "none"
+            }
+          }
+        },
+        {
+          "type": "http",
+          "name": "Profile User",
+          "seq": 7,
+          "request": {
+            "url": "http://localhost:8080/profile/username/@turmaaretade",
+            "method": "GET",
+            "headers": [],
+            "params": [],
+            "body": {
+              "mode": "none",
+              "formUrlEncoded": [],
+              "multipartForm": []
+            },
+            "script": {},
+            "vars": {},
+            "assertions": [],
+            "tests": "",
+            "auth": {
+              "mode": "none"
+            }
+          }
+        },
+        {
+          "type": "http",
+          "name": "SignUp",
+          "seq": 2,
+          "request": {
+            "url": "http://localhost:8080/users",
+            "method": "POST",
+            "headers": [],
+            "params": [],
+            "body": {
+              "mode": "json",
+              "json": "{\n  \"email\": \"user5@gmail.com\",\n  \"password\": \"123\",\n  \"name\": \"herbert\",\n  \"cpf\": \"12345\",\n  \"telephone\": \"12345\"\n}",
+              "formUrlEncoded": [],
+              "multipartForm": []
+            },
+            "script": {},
+            "vars": {},
+            "assertions": [],
+            "tests": "",
+            "auth": {
+              "mode": "none"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "folder",
+      "name": "User",
+      "items": [
+        {
+          "type": "http",
+          "name": "Delete Accont",
+          "seq": 1,
+          "request": {
+            "url": "http://localhost:8080/user/delete",
+            "method": "DELETE",
+            "headers": [],
+            "params": [],
+            "body": {
+              "mode": "multipartForm",
+              "json": "{\n  \"profilePicture\": \"https://socialmedia.com/perfil\",\n  \"professionalName\": \"Ja pode mucar\",\n  \"category\": \"rifa | artesanato\",\n  \"aboutMe\": \"Sobre mim\",\n  \"socialMedia\": \"@projetojapodemucar\",\n  \"localization\": \"Localização\"\n}",
+              "formUrlEncoded": [],
+              "multipartForm": [
+                {
+                  "type": "text",
+                  "name": "title",
+                  "value": "oi",
+                  "enabled": true
+                },
+                {
+                  "type": "text",
+                  "name": "description",
+                  "value": "sim",
+                  "enabled": true
+                },
+                {
+                  "type": "text",
+                  "name": "location",
+                  "value": "aa",
+                  "enabled": true
+                },
+                {
+                  "type": "text",
+                  "name": "category",
+                  "value": "sim",
+                  "enabled": true
+                },
+                {
+                  "type": "file",
+                  "name": "imageUrl",
+                  "value": [
+                    "C:\\Users\\herbe\\Desktop\\Resume.png"
+                  ],
+                  "enabled": true
+                },
+                {
+                  "type": "text",
+                  "name": "date",
+                  "value": "12",
+                  "enabled": true
+                },
+                {
+                  "type": "text",
+                  "name": "eventWebSiteUrl",
+                  "value": "sim",
+                  "enabled": true
+                }
+              ]
+            },
+            "script": {},
+            "vars": {},
+            "assertions": [],
+            "tests": "",
+            "auth": {
+              "mode": "bearer",
+              "bearer": {
+                "token": "{{acessToken}}"
+              }
+            }
+          }
+        },
+        {
+          "type": "http",
+          "name": "Get Profile",
+          "seq": 4,
+          "request": {
+            "url": "http://localhost:8080/profile",
+            "method": "GET",
+            "headers": [],
+            "params": [],
+            "body": {
+              "mode": "none",
+              "json": "{\n  \"profilePicture\": \"https://socialmedia.com/perfil\",\n  \"professionalName\": \"Ja pode mucar\",\n  \"category\": \"rifa | artesanato\",\n  \"aboutMe\": \"Sobre mim\",\n  \"socialMedia\": \"@projetojapodemucar\",\n  \"localization\": \"Localização\"\n}",
+              "formUrlEncoded": [],
+              "multipartForm": [
+                {
+                  "type": "text",
+                  "name": "title",
+                  "value": "oi",
+                  "enabled": true
+                },
+                {
+                  "type": "text",
+                  "name": "description",
+                  "value": "sim",
+                  "enabled": true
+                },
+                {
+                  "type": "text",
+                  "name": "location",
+                  "value": "aa",
+                  "enabled": true
+                },
+                {
+                  "type": "text",
+                  "name": "category",
+                  "value": "sim",
+                  "enabled": true
+                },
+                {
+                  "type": "file",
+                  "name": "imageUrl",
+                  "value": [
+                    "C:\\Users\\herbe\\Desktop\\Resume.png"
+                  ],
+                  "enabled": true
+                },
+                {
+                  "type": "text",
+                  "name": "date",
+                  "value": "12",
+                  "enabled": true
+                },
+                {
+                  "type": "text",
+                  "name": "eventWebSiteUrl",
+                  "value": "sim",
+                  "enabled": true
+                }
+              ]
+            },
+            "script": {},
+            "vars": {},
+            "assertions": [],
+            "tests": "",
+            "auth": {
+              "mode": "bearer",
+              "bearer": {
+                "token": "{{acessToken}}"
+              }
+            }
+          }
+        },
+        {
+          "type": "http",
+          "name": "Get Publications",
+          "seq": 5,
+          "request": {
+            "url": "http://localhost:8080/publications",
+            "method": "GET",
+            "headers": [],
+            "params": [],
+            "body": {
+              "mode": "none",
+              "formUrlEncoded": [],
+              "multipartForm": []
+            },
+            "script": {},
+            "vars": {},
+            "assertions": [],
+            "tests": "",
+            "auth": {
+              "mode": "bearer",
+              "bearer": {
+                "token": "{{acessToken}}"
+              }
+            }
+          }
+        },
+        {
+          "type": "http",
+          "name": "Preencher Profile PREMIUM",
+          "seq": 2,
+          "request": {
+            "url": "http://localhost:8080/users/add-premium-details",
+            "method": "PATCH",
+            "headers": [],
+            "params": [],
+            "body": {
+              "mode": "multipartForm",
+              "json": "{\n  \"profilePicture\": \"https://socialmedia.com/perfil\",\n  \"professionalName\": \"Ja pode mucar\",\n  \"category\": \"rifa | artesanato\",\n  \"aboutMe\": \"Sobre mim\",\n  \"socialMedia\": \"@projetojapodemucar\",\n  \"localization\": \"Localização\"\n}",
+              "formUrlEncoded": [],
+              "multipartForm": [
+                {
+                  "type": "file",
+                  "name": "profilePicture",
+                  "value": [
+                    ""
+                  ],
+                  "enabled": true
+                },
+                {
+                  "type": "text",
+                  "name": "professionalName",
+                  "value": "Japodealmocar",
+                  "enabled": true
+                },
+                {
+                  "type": "text",
+                  "name": "category",
+                  "value": "artesanato | destaque",
+                  "enabled": true
+                },
+                {
+                  "type": "text",
+                  "name": "aboutMe",
+                  "value": "Sobre mim",
+                  "enabled": true
+                },
+                {
+                  "type": "text",
+                  "name": "socialMedia",
+                  "value": "@japodealmocar",
+                  "enabled": true
+                },
+                {
+                  "type": "text",
+                  "name": "localization",
+                  "value": "Rua da Augusta",
+                  "enabled": true
+                }
+              ]
+            },
+            "script": {},
+            "vars": {},
+            "assertions": [],
+            "tests": "",
+            "auth": {
+              "mode": "bearer",
+              "bearer": {
+                "token": "{{acessToken}}"
+              }
+            }
+          }
+        },
+        {
+          "type": "http",
+          "name": "Update User",
+          "seq": 3,
+          "request": {
+            "url": "http://localhost:8080/users/37af3c40-2ced-47ca-afb5-1025e898591b/upgrade-to-premium",
+            "method": "POST",
+            "headers": [],
+            "params": [],
+            "body": {
+              "mode": "json",
+              "json": "{\n  \"username\": \"@japoademucar\"\n}",
+              "formUrlEncoded": [],
+              "multipartForm": []
+            },
+            "script": {},
+            "vars": {},
+            "assertions": [],
+            "tests": "",
+            "auth": {
+              "mode": "bearer",
+              "bearer": {
+                "token": "{{acessToken}}"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "folder",
+      "name": "Upgrade Downgrade",
+      "items": [
+        {
+          "type": "http",
+          "name": "Create Publication",
+          "seq": 3,
+          "request": {
+            "url": "http://localhost:8080/publications",
+            "method": "POST",
+            "headers": [],
+            "params": [],
+            "body": {
+              "mode": "multipartForm",
+              "formUrlEncoded": [],
+              "multipartForm": [
+                {
+                  "type": "text",
+                  "name": "content",
+                  "value": "aa",
+                  "enabled": true
+                },
+                {
+                  "type": "file",
+                  "name": "imageUrl1",
+                  "value": [
+                    "C:\\Users\\herbe\\Downloads\\images.jpg"
+                  ],
+                  "enabled": true
+                },
+                {
+                  "type": "file",
+                  "name": "imageUrl2",
+                  "value": [
+                    "C:\\Users\\herbe\\Downloads\\images.jpg"
+                  ],
+                  "enabled": false
+                },
+                {
+                  "type": "file",
+                  "name": "imageUrl3",
+                  "value": [
+                    "C:\\Users\\herbe\\Downloads\\images.jpg"
+                  ],
+                  "enabled": false
+                },
+                {
+                  "type": "file",
+                  "name": "imageUrl4",
+                  "value": [
+                    ""
+                  ],
+                  "enabled": false
+                }
+              ]
+            },
+            "script": {},
+            "vars": {},
+            "assertions": [],
+            "tests": "",
+            "auth": {
+              "mode": "bearer",
+              "bearer": {
+                "token": "{{acessToken}}"
+              }
+            }
+          }
+        },
+        {
+          "type": "http",
+          "name": "Downgrade to Basic (PREMIUM)",
+          "seq": 2,
+          "request": {
+            "url": "http://localhost:8080/users/downgrade-to-basic",
+            "method": "POST",
+            "headers": [],
+            "params": [],
+            "body": {
+              "mode": "json",
+              "json": "",
+              "formUrlEncoded": [],
+              "multipartForm": []
+            },
+            "script": {},
+            "vars": {},
+            "assertions": [],
+            "tests": "",
+            "auth": {
+              "mode": "bearer",
+              "bearer": {
+                "token": "{{acessToken}}"
+              }
+            }
+          }
+        },
+        {
+          "type": "http",
+          "name": "Upgrade to Premium (BASIC)",
+          "seq": 1,
+          "request": {
+            "url": "http://localhost:8080/users/upgrade-to-premium",
+            "method": "POST",
+            "headers": [],
+            "params": [],
+            "body": {
+              "mode": "json",
+              "json": "{\n  \"username\": \"@japode332\"\n}",
+              "formUrlEncoded": [],
+              "multipartForm": []
+            },
+            "script": {},
+            "vars": {},
+            "assertions": [],
+            "tests": "",
+            "auth": {
+              "mode": "bearer",
+              "bearer": {
+                "token": "{{acessToken}}"
+              }
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "environments": [],
+  "brunoConfig": {
+    "version": "1",
+    "name": "Teia Cultural",
+    "type": "collection",
+    "ignore": [
+      "node_modules",
+      ".git"
+    ]
+  }
+}
