@@ -17,36 +17,6 @@ Desenvolver um serviço de rede social exclusivo para profissionais ligados à c
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![Spring](https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white)
 
-## Percurso do projeto
-
-<table align="center">
-    <thead>
-        <tr align="left">
-            <th>Nº</th> <th>Etapas</th> <th>Situação</th>
-        </tr>
-    </thead>
-    <tbody align="left">
-        <tr>
-            <td>01</td> <td>Protótipo</td> <td align="center">☑️</td>
-        </tr>
-        <tr>
-            <td>02</td> <td>Primeiras páginas do Front</td> <td align="center">☑️</td>
-        </tr>
-        <tr>
-            <td>03</td> <td>Funcionamento do Back</td> <td align="center">☑️</td>
-        </tr>
-        <tr>
-            <td>04</td> <td>Conexão do Back com o Front</td> <td align="center">☑️</td>  
-        </tr>
-        <tr>
-            <td>04</td> <td>Conclusão de todas as páginas</td> <td align="center">☑️</td>
-        </tr>
-        <tr>
-            <td>05</td> <td>Testes finais</td> <td align="center">☑️</td>
-        </tr>
-    </tbody>
-</table>
-
 ---
 ## Sobre o Projeto "Teia Cultural"
 
