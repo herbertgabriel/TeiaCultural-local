@@ -39,10 +39,10 @@ Desenvolver um serviço de rede social exclusivo para profissionais ligados à c
             <td>04</td> <td>Conexão do Back com o Front</td> <td align="center">☑️</td>  
         </tr>
         <tr>
-            <td>04</td> <td>Conclusão de todas as páginas</td> <td align="center">...</td>
+            <td>04</td> <td>Conclusão de todas as páginas</td> <td align="center">☑️</td>
         </tr>
         <tr>
-            <td>05</td> <td>Testes finais</td> <td align="center"></td>
+            <td>05</td> <td>Testes finais</td> <td align="center">☑️</td>
         </tr>
     </tbody>
 </table>
