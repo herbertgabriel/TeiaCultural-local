@@ -6,7 +6,7 @@ Este projeto utiliza o Docker Compose para configurar o ambiente de desenvolvime
 
 Antes de iniciar, verifique se você tem os seguintes requisitos instalados:
 
-- [Java 21](https://adoptopenjdk.net/)
+- [Java 17](https://adoptopenjdk.net/)
 - [Maven](https://maven.apache.org/install.html)
 - [Docker](https://www.docker.com/get-started)
 - [Docker Compose](https://docs.docker.com/compose/install/)
