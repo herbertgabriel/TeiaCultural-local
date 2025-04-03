@@ -26,10 +26,3 @@ Desenvolver um serviço de rede social exclusivo para profissionais ligados à c
 ### Propósito do site
 Catalogar artistas locais e sua respectiva arte, artesanato e/ou produto, idealizando aumentar o alcance e a visibilidade comercial desses artistas e artesãos.
 
----
-### Colaboradores do projeto:
-  <a href="https://github.com/evemqs"><img height="50px" width="50px" src="https://avatars.githubusercontent.com/u/163144541?s=64&v=4"/></a>
-  <a href="https://github.com/herbertgabriel"><img height="50px" width="50px" src="https://avatars.githubusercontent.com/u/142347988?s=64&v=4"/></a>
-  <a href="https://github.com/Julio1506"><img height="50px" width="50px" src="https://avatars.githubusercontent.com/u/178419847?s=64&v=4"/></a>
-
----
